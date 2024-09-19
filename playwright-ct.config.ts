@@ -23,11 +23,11 @@ export default defineConfig({
   use: {
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    testIdAttribute: 'data-test-id',
 
     /* Port to use for Playwright component endpoint. */
     ctPort: 3100
   },
-
   /* Configure projects for major browsers */
   projects: [
     {

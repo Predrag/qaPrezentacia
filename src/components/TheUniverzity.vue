@@ -24,6 +24,7 @@ univerzityObjekty.value = univerzity.value;
 })
 
 const hladajUniverzituInput = ref<string>('')
+const inputValue = ref<string>(hladajUniverzituInput.value)
 const vyhladajUniverzitu = ()=> {
   univerzityObjekty.value = univerzity.value.filter(univerzita => univerzita.name.toLowerCase().includes(hladajUniverzituInput.value.toLowerCase()))
 }
